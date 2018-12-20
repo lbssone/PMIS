@@ -1,0 +1,33 @@
+.container {
+    width: 60%;
+}
+
+nav #logo {
+    margin-left: 10px;
+}
+
+.ui.menu.c-font {
+    font-family: Microsoft JhengHei;
+    font-size: 1.2rem;
+}
+
+.ui.container.c-font {
+    font-family: Microsoft JhengHei;
+}
+
+.ui.menu .item {
+    padding-top: 0em;
+    padding-bottom: 0em;
+}
+
+#nav-img {
+    width: 5rem;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: Microsoft JhengHei!important;
+}
+
+main p {
+    font-size: 14pt;
+}

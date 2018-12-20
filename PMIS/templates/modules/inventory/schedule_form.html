@@ -1,0 +1,19 @@
+{% extends 'base/layout.html' %}
+
+{% block main %}
+
+<form action="{% url 'inventory:schedule_form' %}" method="POST">{% csrf_token %}
+    <label for="number">抗UV直傘:</label>
+    <input type="text" id="name" name="num_of_umbrella">
+    <button type="submit">送出</button>
+</form>
+<br>
+<br>
+{% if component_number_list %}
+    {% for item in component_number_list %}
+        <p>{{ item.0 }}: {{ item.1 }}</p>
+    {% endfor %}
+
+    <p>{{ material_list.0 }}: {{ plastic }}g</p>
+{% endif %}
+{% endblock %}
